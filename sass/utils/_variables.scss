@@ -1,0 +1,32 @@
+:root {
+  --main-text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
+  --dark-bg-text-color: #ffffff;
+  --title-text-color: #212121;
+  --dark-logo-color: #000000;
+  --footer-bg-color: #2f303a;
+  --header-padding-links: 30px 0px 30px 0px;
+  --team-members: 1;
+  --work-photo: 1;
+  --client-number: 2;
+  --characteristic-grid: 1;
+  --bg-characteristic__item: #f5f4fa;
+  --bg-footer-link: rgba(255, 255, 255, 0.1);
+  --icon-color: #afb1b8;
+  --tr-duration: 250ms;
+  --tr-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    --team-members: 2;
+    --work-photo: 2;
+    --characteristic-grid: 2;
+    --client-number: 3;
+  }
+  @media screen and (min-width: 1200px) {
+    --team-members: 4;
+    --work-photo: 3;
+    --characteristic-grid: 4;
+    --client-number: 6;
+  }
+}

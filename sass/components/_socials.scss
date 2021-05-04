@@ -1,0 +1,15 @@
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition-property: background-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-timing-function);
+}
+.social__icon {
+  width: 20px;
+  height: 20px;
+}

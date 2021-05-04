@@ -1,0 +1,71 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.is-hidden .modal {
+  transform: translate(100%, 100%) scale(0.2);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 700ms ease-in-out 300ms;
+  background-color: var(--dark-bg-text-color);
+
+  @media screen and (max-width: 1199.98px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
+.modal__button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--dark-bg-text-color);
+  padding: 0;
+  cursor: pointer;
+
+  &:hover .modal__button-close-icon,
+  &:focus .modal__button-close-icon {
+    fill: var(--accent-color);
+  }
+}
+.modal__button-close-icon {
+  width: 11px;
+  height: 11px;
+  fill: var(--dark-logo-color);
+  transition: fill var(--tr-duration) var(--tr-timing-function);
+}
+.modal__label {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin-bottom: 12px;
+  color: var(--title-text-color);
+}

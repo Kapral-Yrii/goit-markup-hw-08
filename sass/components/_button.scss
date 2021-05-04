@@ -1,0 +1,70 @@
+/* studio button */
+.hero__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text-color);
+  background-color: var(--accent-color);
+  margin: auto;
+  border-radius: 3px;
+  border: 0px;
+  padding: 10px 32px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color-hover);
+  }
+}
+/* portfolio buttons */
+
+.project__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: inherit;
+  border-radius: 10px;
+  border-width: 1px;
+  color: var(--title-text-color);
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 0;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: var(--tr-duration);
+  transition-timing-function: var(--tr-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--dark-bg-text-color);
+    background-color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 15px;
+  }
+}
+.project__buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 767.98px) {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 30px;
+  }
+}
