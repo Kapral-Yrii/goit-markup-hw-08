@@ -23,6 +23,20 @@
     background-color: var(--accent-color-hover);
   }
 }
+.mobile-menu__button {
+  position: absolute;
+  z-index: 120;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
 /* portfolio buttons */
 
 .project__button {
