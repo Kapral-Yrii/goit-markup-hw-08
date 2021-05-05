@@ -767,7 +767,7 @@ p {
 .mobile-menu {
   position: absolute;
   top: 0;
-  right: -100%;
+  right: 0;
   z-index: 100;
   width: 100%;
   max-width: 480px;
@@ -777,11 +777,13 @@ p {
   padding-right: 83px;
   padding-top: 48px;
   background-color: var(--dark-bg-text-color);
-  transition: right 0.5s;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: transform 0.5s;
 }
 
 .mobile-menu.is-open {
-  right: 0;
+  transform: scaleX(1);
 }
 
 @media screen and (min-width: 767.98px) {
