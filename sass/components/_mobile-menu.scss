@@ -16,6 +16,10 @@
   &.is-open {
     right: 0;
   }
+
+  @media screen and (min-width: 767.98px) {
+    display: none;
+  }
 }
 .mobile-menu__menu-icon {
   width: 40px;

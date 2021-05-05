@@ -180,6 +180,12 @@ p {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 767.98px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
 /* portfolio buttons */
 .project__button {
   font-weight: 500;
@@ -776,6 +782,12 @@ p {
 
 .mobile-menu.is-open {
   right: 0;
+}
+
+@media screen and (min-width: 767.98px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 .mobile-menu__menu-icon {
