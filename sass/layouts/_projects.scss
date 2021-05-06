@@ -34,13 +34,18 @@
   }
 }
 .project__item-info {
-  padding: 20px 25px;
+  padding: 12px 25px;
   border-color: #eeeeee;
   border-style: solid;
   border-left-width: 1px;
   border-bottom-width: 1px;
   border-right-width: 1px;
   border-top-width: 0px;
+}
+.project__item-info--tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding-bottom: 48px;
+  }
 }
 .project__link {
   text-decoration: none;
@@ -65,7 +70,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: auto;
   height: 294px;
   display: flex;
   align-items: center;
