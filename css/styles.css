@@ -774,7 +774,7 @@ p {
   height: 100vh;
   min-height: 796px;
   padding-left: 40px;
-  padding-right: 83px;
+  padding-right: 15px;
   padding-top: 48px;
   background-color: var(--dark-bg-text-color);
   transform: scale(0);
@@ -836,6 +836,7 @@ p {
 .mobile-menu__social-link-list {
   display: flex;
   justify-content: space-between;
+  max-width: 357px;
 }
 
 .mobile-menu__social-link {
