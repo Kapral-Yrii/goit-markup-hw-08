@@ -142,13 +142,8 @@
   height: 15px;
 }
 .modal-form__button {
-  padding-left: 124px;
-  padding-right: 124px;
-
-  @media screen and (max-width: 1199.98px) {
-    padding-left: 85px;
-    padding-right: 85px;
-  }
+  display: flex;
+  justify-content: center;
 }
 .modal-form__button-submit {
   border: none;
