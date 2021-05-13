@@ -13,6 +13,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+.is-overflow {
+  overflow: hidden;
+}
 .link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
